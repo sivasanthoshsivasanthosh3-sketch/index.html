@@ -23,10 +23,7 @@
 <main id="list"></main>
 
 <script>
-const files = [
-  "C:\Users\siva\Pictures\moviebox\OneDrive\Documents\AUTO CAD"
-];
-
+const files = ["C:\Users\siva\Pictures\moviebox\OneDrive\Documents\AUTO CAD\EX.16 KEST.zip"];
 document.getElementById("list").innerHTML = files.map(f => `
   <div class="item">
     <strong>${f}</strong>
