@@ -10,7 +10,6 @@
     .item { background:white; padding:18px; margin-bottom:12px; border-radius:10px;
             display:flex; justify-content:space-between; align-items:center; }
     a { text-decoration:none; padding:10px 14px; border-radius:8px; font-weight:bold; }
-    .view { background:#0f4c81; color:white; margin-right:8px; }
     .dwg { background:#e8eef4; color:#0f4c81; border:1px solid #c8d6e3; }
   </style>
 </head>
@@ -23,12 +22,11 @@
 <main id="list"></main>
 
 <script>
-const files = ["C:\Users\siva\Pictures\moviebox\OneDrive\Documents\AUTO CAD\EX.16 KEST.zip"];
+const files = [C:\Users\siva\Pictures\moviebox\OneDrive\Documents\AUTO CAD\EX.16 KEST.zip];
 document.getElementById("list").innerHTML = files.map(f => `
   <div class="item">
     <strong>${f}</strong>
     <div>
-      <a class="view" href="drawings/${f}.pdf" target="_blank">View PDF</a>
       <a class="dwg" href="drawings/${f}.dwg" download>Download DWG</a>
     </div>
   </div>
